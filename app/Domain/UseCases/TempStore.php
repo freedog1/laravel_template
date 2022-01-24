@@ -18,12 +18,16 @@ class TempStore
     
   }
 
-  public function __invoke(string $word)
+  public function __invoke(?string $word)
   {
-    $this->tempRepo->store($word);
+    if(!is_null($word)){
+      $this->tempRepo->store($word);
+    }
     
 
     //logWriter
+
+    return true;
 
     
   }

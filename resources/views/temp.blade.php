@@ -1,6 +1,3 @@
-<?php
-phpinfo();
-?>
 <main>
   <section>
     <div>
